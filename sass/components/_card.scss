@@ -1,0 +1,78 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 13.3333333333rem;
+    justify-content: center;
+    background: #fff;
+    color: $color-neutral-dark-blue;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    // align-items: center;
+
+    &-header {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    &-para {
+      color: $color-neutral-grayish-blue;
+      font-size: 0.8rem;
+    }
+
+    &-icon {
+      width: 64px;
+      height: 64px;
+      margin-left: auto;
+    }
+  }
+
+  &__card-1 {
+    margin-right: 1.4rem;
+    border-top: 5px solid $color-primary-cyan;
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  &__card-2 {
+    margin-bottom: 1.4rem;
+    border-top: 5px solid $color-primary-red;
+  }
+
+  &__card-3 {
+    margin-left: 1.4rem;
+    border-top: 5px solid $color-primary-blue;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__card-4 {
+    border-top: 5px solid $color-primary-orange;
+    margin-bottom: 1.4rem;
+  }
+
+  &__card-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

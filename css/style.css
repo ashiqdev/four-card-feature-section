@@ -1,0 +1,111 @@
+/*
+0 - 600px   PHONE
+600 - 900px TABLET PORTRAIT
+900 - 1200  TABLET LANDSCAPE
+1200 - 1799 WHERE OUR NORMAL STYLES APPLY 
+1800px +  :   BIG DESKTOP
+*/
+/*
+-  phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 93.75%; }
+
+.wrapper {
+  height: 100vh;
+  background-color: #fafafa; }
+  @media only screen and (max-width: 60.5em) {
+    .wrapper {
+      height: auto; } }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.heading {
+  text-align: center;
+  padding-top: 3rem; }
+  .heading__title {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #4c4e61; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__title {
+        font-size: 1.5rem; } }
+  .heading__title-second {
+    margin-top: -5px;
+    font-weight: 600;
+    color: #4c4e61;
+    margin-bottom: 1rem; }
+  .heading__slogan {
+    width: 30rem;
+    margin: 0 auto;
+    color: #a3a5ae;
+    font-size: 0.9rem;
+    font-weight: 400; }
+    @media only screen and (max-width: 60.5em) {
+      .heading__slogan {
+        width: 16.6666666667rem; } }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem; }
+  @media only screen and (max-width: 60.5em) {
+    .cards {
+      flex-direction: column; } }
+  .cards__card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 13.3333333333rem;
+    justify-content: center;
+    background: #fff;
+    color: #4c4e61;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .cards__card-header {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem; }
+    .cards__card-para {
+      color: #a3a5ae;
+      font-size: 0.8rem; }
+    .cards__card-icon {
+      width: 64px;
+      height: 64px;
+      margin-left: auto; }
+  .cards__card-1 {
+    margin-right: 1.4rem;
+    border-top: 5px solid #45d3d3; }
+    @media only screen and (max-width: 60.5em) {
+      .cards__card-1 {
+        margin-right: 0;
+        margin-bottom: 1.4rem; } }
+  .cards__card-2 {
+    margin-bottom: 1.4rem;
+    border-top: 5px solid #ea5353; }
+  .cards__card-3 {
+    margin-left: 1.4rem;
+    border-top: 5px solid #549ef2; }
+    @media only screen and (max-width: 60.5em) {
+      .cards__card-3 {
+        margin-left: 0;
+        margin-bottom: 2rem; } }
+  .cards__card-4 {
+    border-top: 5px solid #fcaf4a;
+    margin-bottom: 1.4rem; }
+  .cards__card-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }

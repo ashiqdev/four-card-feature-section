@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; // 15px = 1rem
+
+    
+}
+
+.wrapper {
+    // display: flex;
+    // flex-direction: column;
+    height: 100vh;
+    background-color: $color-neutral-light-gray;
+    @include respond(tab-port) {
+        height: auto;
+      }
+
+}
