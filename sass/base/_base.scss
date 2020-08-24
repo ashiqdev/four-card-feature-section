@@ -13,7 +13,8 @@ html {
 .wrapper {
     // display: flex;
     // flex-direction: column;
-    height: 100vh;
+    // height: 100vh;
+    // padding: 1rem;
     background-color: $color-neutral-light-gray;
     @include respond(tab-port) {
         height: auto;
